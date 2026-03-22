@@ -2,7 +2,7 @@ const { PDFDocument } = require('pdf-lib');
 
 exports.imagesToPdf = async (files) => {
   const pdfDoc = await PDFDocument.create();
-
+  const inputLength = files
   for (const file of files) {
     let image;
   if (file.mimetype === 'image/jpeg') {

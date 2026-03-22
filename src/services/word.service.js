@@ -1,8 +1,5 @@
-const libre = require('libreoffice-convert');
-const util = require('util');
+// const libre = require('libreoffice-convert');
 
-libre.convertAsync = util.promisify(libre.convert);
-
-exports.wordToPdf = async (buffer) => {
-  return await libre.convertAsync(buffer, '.pdf');
-};
+// exports.wordToPdf = async (buffer) => {
+//   return await libre.convertAsync(buffer, '.pdf', undefined);
+// };
